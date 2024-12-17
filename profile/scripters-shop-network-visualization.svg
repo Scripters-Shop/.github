@@ -1,28 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid meet">
   <defs>
+    <!-- Background Gradient -->
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#f0f4f8;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#e6f2ff;stop-opacity:1" />
     </linearGradient>
-    
+
+    <!-- Drop Shadow Effect -->
     <filter id="shadowEffect">
-      <feDropShadow dx="3" dy="3" stdDeviation="5" flood-color="#2c3e50" flood-opacity="0.2"/>
+      <feDropShadow dx="3" dy="3" stdDeviation="5" flood-color="#2c3e50" flood-opacity="0.2" />
     </filter>
-    
+
+    <!-- Font Import -->
     <style type="text/css">
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
     </style>
   </defs>
-  
+
   <!-- Background -->
-  <rect width="1000" height="600" fill="url(#bgGradient)"/>
-  
-  <!-- Central Hub -->
-  <circle cx="500" cy="300" r="150" 
-          fill="#4a6cf7" 
-          filter="url(#shadowEffect)"
-          opacity="0.9"/>
-  
+  <rect width="1000" height="600" fill="url(#bgGradient)" />
+
+  <!-- Central Hub Circle -->
+  <circle 
+    cx="500" 
+    cy="300" 
+    r="150" 
+    fill="#4a6cf7" 
+    filter="url(#shadowEffect)" 
+    opacity="0.9" 
+  />
+
   <!-- Connection Lines -->
   <g stroke="#4a6cf7" stroke-width="3" stroke-dasharray="8,5" opacity="0.5">
     <line x1="500" y1="300" x2="250" y2="150" />
@@ -30,52 +37,68 @@
     <line x1="500" y1="300" x2="200" y2="450" />
     <line x1="500" y1="300" x2="800" y2="450" />
   </g>
-  
-  <!-- Satellite Nodes -->
+
+  <!-- Satellite Nodes and Labels -->
   <g font-family="Inter, sans-serif" text-anchor="middle">
     <!-- Developer Tools -->
-    <circle cx="250" cy="150" r="80" 
-            fill="#5e81f9" 
-            filter="url(#shadowEffect)"
-            opacity="0.8"/>
+    <circle 
+      cx="250" 
+      cy="150" 
+      r="80" 
+      fill="#5e81f9" 
+      filter="url(#shadowEffect)" 
+      opacity="0.8" 
+    />
     <text x="250" y="150" fill="white" font-weight="600" font-size="16">
       Developer Tools
     </text>
-    
+
     <!-- AI Solutions -->
-    <circle cx="750" cy="150" r="80" 
-            fill="#34d399" 
-            filter="url(#shadowEffect)"
-            opacity="0.8"/>
+    <circle 
+      cx="750" 
+      cy="150" 
+      r="80" 
+      fill="#34d399" 
+      filter="url(#shadowEffect)" 
+      opacity="0.8" 
+    />
     <text x="750" y="150" fill="white" font-weight="600" font-size="16">
       AI Solutions
     </text>
-    
+
     <!-- Community Network -->
-    <circle cx="200" cy="450" r="80" 
-            fill="#f43f5e" 
-            filter="url(#shadowEffect)"
-            opacity="0.8"/>
+    <circle 
+      cx="200" 
+      cy="450" 
+      r="80" 
+      fill="#f43f5e" 
+      filter="url(#shadowEffect)" 
+      opacity="0.8" 
+    />
     <text x="200" y="450" fill="white" font-weight="600" font-size="16">
       Community
     </text>
-    
+
     <!-- Support Ecosystem -->
-    <circle cx="800" cy="450" r="80" 
-            fill="#f59e0b" 
-            filter="url(#shadowEffect)"
-            opacity="0.8"/>
+    <circle 
+      cx="800" 
+      cy="450" 
+      r="80" 
+      fill="#f59e0b" 
+      filter="url(#shadowEffect)" 
+      opacity="0.8" 
+    />
     <text x="800" y="450" fill="white" font-weight="600" font-size="16">
       Support
     </text>
   </g>
-  
+
   <!-- Central Label -->
   <text 
     x="500" 
     y="300" 
     text-anchor="middle" 
-    font-family="Inter, sans-serif"
+    font-family="Inter, sans-serif" 
     font-size="24" 
     font-weight="700" 
     fill="white"
